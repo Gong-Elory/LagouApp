@@ -1,0 +1,569 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+body {
+  font-size: 0.42666667rem;
+  background-color: #eee;
+}
+button {
+  outline-width: 0;
+  border: none;
+}
+.head {
+  background-color: #12D5B5;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  padding-left: 0 7px;
+}
+.head .text {
+  color: #fff;
+}
+.head .custom {
+  background-color: #FEAE11;
+  color: #fff;
+  border: none;
+  margin-top: 0.26666667rem;
+  margin-right: 0.13333333rem;
+  padding-right: 0.26666667rem;
+  padding-left: 0.26666667rem;
+}
+.head .backBtn {
+  font-size: 20px;
+  width: 1rem;
+  left: 0;
+}
+.foot {
+  border: 1px solid #d4d4d4;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  list-style: none;
+}
+.foot li {
+  font-size: 20px;
+  width: 33.33%;
+  color: #9f9d9e;
+}
+.foot li.select {
+  background-color: #dbf9f4;
+  color: #01c2a3;
+}
+.foot i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.foot .icon-document {
+  background-image: url(../image/document.png);
+  width: 25px;
+  height: 21px;
+}
+.foot .icon-search {
+  background-image: url(../image/search.png);
+  width: 24px;
+  height: 24px;
+}
+.foot .icon-me {
+  background-image: url(../image/my.png);
+  width: 23px;
+  height: 22px;
+}
+.position-list {
+  margin: 0;
+  padding: 0;
+}
+.position-list .item {
+  margin: 0;
+  padding: 7px 3px;
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+.position-list .item .logo {
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  margin-right: 13px;
+}
+.position-list .item .title {
+  margin: 0;
+}
+.position-list .item .text,
+.position-list .item .time {
+  margin: 0;
+}
+.position-list .item .icon {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 0.8rem;
+  height: 0.74666667rem;
+  right: 12px;
+  top: 14px;
+}
+.position-list .item .icon.star {
+  background-image: url(../image/star.png);
+}
+.position-list .item .icon.star-active {
+  background-image: url(../image/star-active.png);
+}
+.position-info {
+  padding: 26px 10px 18px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.position-info .ml {
+  margin-left: 20px;
+}
+.position-info img {
+  right: 24px;
+  top: 40px;
+}
+.company-info {
+  padding: 10px 15px 1px 85px;
+}
+.company-info img {
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 15px;
+}
+.company-info p {
+  margin-top: 0;
+}
+.position-class {
+  background-color: #fff;
+  border-top: 1px solid #d4d4d4;
+  padding: 13px 9px 5px 9px;
+}
+.position-class h5 {
+  margin: 0 0 35px 0;
+}
+.position-class button {
+  background-color: #def8f5;
+  padding-left: 23px;
+  padding: 10px 23px;
+}
+.position-class button.active {
+  background-color: #12D5B5;
+  color: #fff;
+}
+.position-class ul {
+  border-top: 1px solid #d4d4d4;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+.position-class ul li {
+  list-style: none;
+}
+.position-class ul li span {
+  color: red;
+  right: 10px;
+  top: 20px;
+}
+.tab {
+  background-color: #eee;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  margin-top: 1.06666667rem;
+  font-size: 0;
+}
+.tab li {
+  font-size: 0.26666667rem;
+  width: 33.3%;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  border-bottom: 2px solid #f7f7f7;
+}
+.tab li.active {
+  border-bottom: 2px solid #12D5B5;
+}
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0 ;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.sheet .wrap {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 100;
+}
+.sheet .wrap li,
+.sheet .wrap button {
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  color: #1063e5;
+  background-color: #f1f2f3;
+  width: 100%;
+}
+.sheet .wrap button {
+  border-radius: 5px;
+  margin-top: 8px;
+}
+.sheet .wrap ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 500px;
+}
+.sheet .wrap ul li {
+  list-style: none;
+  border-bottom: 1px solid #d4d4d4;
+}
+.f-r {
+  float: right;
+}
+.f-l {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-b {
+  display: block;
+}
+.ta-l {
+  text-align: left;
+}
+.ta-r {
+  text-align: right;
+}
+.ta-c {
+  text-align: center;
+}
+.va-m {
+  vertical-align: middle;
+}
+.va-t {
+  vertical-align: top;
+}
+.va-b {
+  vertical-align: bottom;
+}
+.p-a {
+  position: absolute;
+}
+.p-r {
+  position: relative;
+}
+.bg-w {
+  background-color: white;
+}
+.c-w {
+  color: white;
+}
+.c-r {
+  color: red;
+}
+.bottom-btn {
+  position: fixed;
+  height: 1.2rem;
+  background-color: #12D5B5;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+}
+.position-des {
+  margin-top: 10px;
+}
+.position-des h5 {
+  font-size: 0.42666667rem;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+  padding-left: 10px;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.position-des pre {
+  padding-left: 10px;
+  margin-left: 0;
+  padding-bottom: 16px;
+}
+.search-bar {
+  background-color: #12D5B5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+}
+.search-bar button {
+  background-color: #12D5B5;
+}
+.search-bar button:first-child {
+  color: #fff;
+}
+.search-bar button:last-child {
+  background: url(../image/search.png) no-repeat 0px 4px;
+  background-size: 15px 15px;
+  color: #9f9d9e;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.search-bar input {
+  border-radius: 80px;
+  background-color: #eee;
+  border-style: none;
+  box-sizing: border-box;
+  outline-width: 0;
+  padding-left: 0.53333333rem;
+  height: 0.66666667rem;
+  width: 5.06666667rem;
+}
+.search-list {
+  margin-top: 70px !important;
+}
+.login {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.login form {
+  margin-top: 6.93333333rem;
+}
+.login form .form-line {
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  border-width: 0;
+  color: #fff;
+  font-size: 0;
+}
+.login form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.login form .form-line input {
+  padding-left: 30px;
+  box-sizing: border-box;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  height: 100%;
+  border: none;
+  outline-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.login form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login form .form-line input.ng-invalid + span {
+  position: absolute;
+  color: red;
+  right: 0;
+  height: 100%;
+  font-size: 0.32rem;
+  width: auto;
+  background-color: transparent;
+  text-align: right;
+}
+.login form .form-line input.ng-invalid + span p {
+  margin: 0;
+}
+.login form .form-line span {
+  background-repeat: no-repeat;
+  background-position: 12px 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 1.46666667rem;
+  height: 100%;
+}
+.login form .form-line .account {
+  background-image: url(../image/account.png);
+}
+.login form .form-line .lock {
+  background-image: url(../image/lock.png);
+}
+.login form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-weight: bold;
+  font-size: 22px;
+}
+.login form button.login-button {
+  background-color: #12D5B5;
+  color: #fff;
+  margin-top: 75px;
+}
+.login form button.register-button {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12D5B5;
+  border: 1px solid #12D5B5;
+}
+.register {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.register form {
+  margin-top: 1.46666667rem;
+}
+.register form .form-line {
+  width: 8rem;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  border-width: 0;
+  color: #fff;
+  font-size: 0;
+}
+.register form .form-line:first-child {
+  border-bottom: 1px solid #fff;
+}
+.register form .form-line input {
+  padding-left: 30px;
+  box-sizing: border-box;
+  width: 6.53333333rem;
+  font-size: 0.37333333rem;
+  height: 100%;
+  border: none;
+  outline-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.register form .form-line input::-webkit-input-placeholder {
+  color: #fff;
+}
+.register form .form-line input.ng-invalid + span {
+  position: absolute;
+  color: red;
+  right: 0;
+  height: 100%;
+  font-size: 0.32rem;
+  width: auto;
+  background-color: transparent;
+  text-align: right;
+}
+.register form .form-line input.ng-invalid + span p {
+  margin: 0;
+}
+.register form .form-line span {
+  background-repeat: no-repeat;
+  background-position: 12px 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 1.46666667rem;
+  height: 100%;
+}
+.register form .form-line .account {
+  background-image: url(../image/account.png);
+}
+.register form .form-line .lock {
+  background-image: url(../image/lock.png);
+}
+.register form .message-wrap {
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 1.06666667rem;
+}
+.register form .message-wrap .message-box {
+  padding-left: 30px;
+  box-sizing: border-box;
+  width: 5.06666667rem;
+  font-size: 0.37333333rem;
+  height: 1.06666667rem;
+  border: none;
+  outline-width: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.register form .message-wrap .message-box::-webkit-input-placeholder {
+  color: #fff;
+}
+.register form .message-wrap .message {
+  font-size: 0.37333333rem;
+  color: #12D5B5;
+  background-color: none;
+  border: 1px solid #12D5B5;
+  padding: 0 5px;
+  margin-left: 10px;
+}
+.register form .message-wrap .message.disabled {
+  color: #d4d4d4;
+  border-color: #d4d4d4;
+}
+.register form button {
+  width: 8rem;
+  height: 0.93333333rem;
+  font-weight: bold;
+  font-size: 22px;
+}
+.register form button.login-button {
+  background-color: #12D5B5;
+  color: #fff;
+  margin-top: 75px;
+}
+.register form button.register-button {
+  margin-top: 20px;
+  background-color: rgba(18, 213, 181, 0.2);
+  color: #12D5B5;
+  border: 1px solid #12D5B5;
+}
+.me img {
+  margin: 0 auto;
+  margin-top: 1.6rem;
+}
+.me .name {
+  margin-top: 0.66666667rem;
+}
+.me .btns {
+  margin-top: 1.06666667rem;
+}
+.me .btns button {
+  margin-left: 0.32rem;
+  margin-right: 0.32rem;
+  font-size: 0.42666667rem;
+  width: 4rem;
+  height: 2.53333333rem;
+  background-color: #12D5B5;
+  color: #fff;
+}
+.me .btns .logout {
+  background-color: red;
+  width: 9.06666667rem;
+  height: 1.06666667rem;
+  margin-top: 0.53333333rem;
+}
+.me .login-btn {
+  background-color: #01c2a3;
+  width: 9.06666667rem;
+  height: 1.06666667rem;
+  margin-top: 8rem;
+  color: #fff;
+}
+.my-post {
+  margin-top: 1.12rem;
+}

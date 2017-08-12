@@ -1,0 +1,8 @@
+<div class="sheet" ng-show="vis" ng-click="vis=false">
+	<div class="wrap">
+		<ul>
+			<li ng-repeat="item in list" class="d-b ta-c" ng-bind="item.name" ng-click="select(item);"></li>
+		</ul>
+		<button ng-click="vis=false;">取消</button>
+	</div>
+</div>
