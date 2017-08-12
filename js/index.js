@@ -352,7 +352,7 @@ angular.module('app').directive('appFoot',function(){
 	return {
 		restrict: "A",
 		replace: true,
-		templateUrl: "/view/templates/foot.html"
+		templateUrl: "view/templates/foot.html"
 	}
 })
 'use strict';
@@ -442,7 +442,7 @@ angular.module('app').directive('appPositionList',['$http','cache',function($htt
 	return {
 		restrict: "A",
 		replace: true,
-		templateUrl: "/view/templates/positionlist.html",
+		templateUrl: "view/templates/positionlist.html",
 		scope: {
 			data: "=",
 			filterobj: "=",
