@@ -134,7 +134,7 @@ angular.module('app').controller('loginCtrl',['$scope','$http','dict','$state','
 }])
 'use strict'
 angular.module('app').controller('mainCtrl',['$scope','$http',function($scope,$http){
-	$http.get('/data/positionList.json')
+	$http.get('data/positionList.json')
 	.success(function(data){
 		$scope.list = data;
 	});
